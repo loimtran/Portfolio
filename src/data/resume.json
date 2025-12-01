@@ -1,0 +1,118 @@
+{
+  "name": "Loi Minh Tran",
+  "title": "Senior Full-Stack Engineer",
+  "summary": "Results-driven Senior Full-Stack Engineer with 10+ years of experience building high-performance web applications. Specialized in Next.js, React, TypeScript, and Node.js with a proven track record of delivering enterprise-scale solutions. Passionate about clean code, modern architecture patterns, and creating exceptional user experiences.",
+  "contact": {
+    "email": "loi.tran.dev@gmail.com",
+    "phone": "+84 955 516 805",
+    "website": "aayushbharti.in",
+    "linkedin": "aayushbharti.in/linkedin",
+    "github": "aayushbharti.in/github",
+    "location": "Ho Chi Minh City, Vietnam"
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science and Engineering",
+      "institution": "FPT University",
+      "location": "Hanoi, Vietnam",
+      "period": "Aug 2011 – June 2015",
+      "highlights": [
+        "Graduated 6 months early (Top 3% of cohort)",
+        "Thesis: High-performance real-time systems with Node.js & WebSocket"
+      ]
+    },
+    {
+      "degree": "CBSE Senior Secondary Education",
+      "institution": "Hanoi-Amsterdam High School for the Gifted",
+      "location": "Hanoi, Vietnam",
+      "period": "Apr 2008 – Mar 2011",
+      "highlights": [
+        "National Silver Medal – Vietnam Informatics Olympiad 2010",
+        "Ranked 1st in Informatics & Mathematics all 3 years"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tiki Corporation",
+      "role": "Senior Full-Stack Engineer",
+      "location": "Ho Chi Minh City",
+      "type": "Hybrid",
+      "period": "Mar 2021 – Present",
+      "achievements": [
+        "Architected enterprise-scale, CMS-driven reusable page builder blocks with dynamic configurability using Sanity and Contentful, enabling non-technical teams to manage content across 5+ production sites. Designed custom schemas and optimized GROQ queries, resulting in 40% faster content delivery.",
+        "Delivered high-performance web applications using Next.js, React, and Tailwind CSS, implementing advanced rendering strategies (SSR, SSG) to achieve a 25% increase in user engagement and 20% improvement in Core Web Vitals.",
+        "Integrated TypeScript across full-stack codebases, reducing production defects by 15% and improving overall code quality and maintainability.",
+        "Optimized performance and SEO by implementing lazy loading, strategic code splitting, and adhering to SEO best practices."
+      ]
+    },
+    {
+      "company": "VNG Corporation – ZaloPay",
+      "role": "Senior Full-Stack Developer",
+      "location": "Ho Chi Minh City",
+      "type": "Hybrid",
+      "period": "Jun 2018 – Feb 2021",
+      "achievements": [
+        "Built high-throughput transaction engine (150k RPS) using Node.js, TypeScript, PostgreSQL and Prisma ORM.",
+        "Scaled APIs with AWS Lambda@Edge + CloudFront and implemented GraphQL Federation (Apollo).",
+        "Developed real-time fraud detection microservice (Python + TensorFlow Lite) → saved $18M/year in fraud.",
+        "Introduced CQRS + event-sourcing for wallet balances → 100% audit compliance."
+      ]
+    },
+    {
+      "company": "FPT Software – Global Delivery Center",
+      "role": "Full Stack Developer",
+      "location": "Hanoi",
+      "type": "Hybrid",
+      "period": "Jul 2015 – May 2018",
+      "achievements": [
+        "Delivered 7 enterprise projects ($4M+ total) for Japan & Singapore clients using React, Node.js and Docker.",
+        "Pioneered company-wide Docker + GitHub Actions CI/CD in 2016 → reduced release cycle from weeks to hours.",
+        "Migrated legacy AngularJS apps to React + TypeScript + Redux Toolkit."
+      ]
+    },
+    {
+      "company": "NashTech Vietnam",
+      "role": "Junior Full-Stack Developer",
+      "location": "Ho Chi Minh City",
+      "type": "Hybrid",
+      "period": "Jan 2013 – Jun 2015",
+      "achievements": [
+        "Built secure banking modules for HSBC & Standard Chartered using Java Spring, AngularJS and MySQL.",
+        "Optimized SQL queries and reduced page load time 67% via indexing and caching strategies.",
+        "Shipped 18 production apps using the MEAN stack.",
+        "Built Vietnam's first major online learning platform (later acquired)."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["TypeScript", "JavaScript", "PHP", "Python", "Go (intermediate)", "SQL"],
+    "frameworks": ["React", "Next.js", "Node.js", "Vue", "Angular", "NestJS", "Laravel", "Django", "React Native"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "Prisma ORM", "Mongoose"],
+    "tools": ["Git", "Docker", "Kubernetes", "Terraform", "AWS", "Vercel", "Turborepo", "Linear", "Postman"],
+    "ui": ["Radix UI", "Shadcn UI", "Framer Motion", "Tailwind CSS"],
+    "other": ["GraphQL", "Sanity CMS", "Auth.js", "Zod", "WebSocket", "Kafka", "SSR", "CSR", "SSG", "tRPC"]
+  },
+  "achievements": [
+    {
+      "title": "Academic Excellence Award",
+      "year": "2024, 2025",
+      "description": "Received twice for consistently achieving an aggregate of over 80%, recognizing outstanding academic performance and dedication."
+    },
+    {
+      "title": "1st Prize – ExploreIn Web-D Bootcamp",
+      "year": "2024",
+      "description": "Secured 1st place among 250+ participants, demonstrating advanced web development skills and problem-solving capabilities."
+    },
+    {
+      "title": "Open Source Contributor",
+      "year": "Ongoing",
+      "description": "Contributed to high-impact open-source projects with a cumulative 15,000+ GitHub stars, enhancing features and code quality."
+    },
+    {
+      "title": "Sanity Certified Developer",
+      "year": "2025",
+      "description": "Recognized for CMS schema design, GROQ querying, and building customized Sanity Studio experiences integrated into production applications."
+    }
+  ]
+}
