@@ -23,10 +23,10 @@ const pageVariants = {
 };
 
 const pageTransition = {
-  type: "tween",
-  ease: "easeInOut",
+  type: "tween" as const,
+  ease: "easeInOut" as const,
   duration: 0.4,
-};
+} as const;
 
 export function PageTransition({ children }: PageTransitionProps) {
   return (
