@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, MapPin, Mail, Phone, Briefcase, GraduationCap, Award, Code } from "lucide-react";
+import { Download, MapPin, Mail, Briefcase, GraduationCap, Award, Code, Link as LinkIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/layout/PageTransition";
+import Link from "next/link";
 import resumeData from "@/data/resume.json";
 
 export default function ResumePage() {
@@ -52,10 +52,6 @@ export default function ResumePage() {
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4 flex-shrink-0" />
                     <span className="break-words">{resumeData.contact.email}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 flex-shrink-0" />
-                    <span className="break-words">{resumeData.contact.phone}</span>
                   </div>
                 </div>
               </div>

@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, LinkIcon, Linkedin, Mail, Code } from "lucide-react";
 import Link from "next/link";
 
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com" },
   { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
+  { name: "Dev.to", icon: Code, href: "https://dev.to/loimtran" },
   { name: "Email", icon: Mail, href: "mailto:loi.tran.dev@gmail.com" },
 ];
 

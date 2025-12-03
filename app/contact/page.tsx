@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Mail, Phone, MapPin, CheckCircle, Loader2, Github, Linkedin } from "lucide-react";
+import { Send, Mail, MapPin, CheckCircle, Loader2, Github, Linkedin, LinkIcon, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,12 +18,6 @@ const contactInfo = [
     href: `mailto:${resumeData.contact.email}`,
   },
   {
-    icon: Phone,
-    label: "Phone",
-    value: resumeData.contact.phone,
-    href: `tel:${resumeData.contact.phone.replace(/\s/g, "")}`,
-  },
-  {
     icon: MapPin,
     label: "Location",
     value: resumeData.contact.location,
@@ -32,8 +26,9 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+  { icon: Github, label: "GitHub", href: resumeData.contact.github },
+  { icon: Linkedin, label: "LinkedIn", href: resumeData.contact.linkedin },
+  { icon: Code, label: "Dev.to", href: resumeData.contact.devto },
 ];
 
 export default function ContactPage() {
@@ -148,7 +143,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold mb-2 text-base md:text-lg">Response Time</h3>
                   <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                     I typically respond within 24-48 hours. For urgent matters,
-                    feel free to reach out via phone.
+                    feel free to reach out via email.
                   </p>
                 </div>
               </div>

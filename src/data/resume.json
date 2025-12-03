@@ -4,10 +4,10 @@
   "summary": "Results-driven Senior Full-Stack Engineer with 10+ years of experience building high-performance web applications. Specialized in Next.js, React, TypeScript, and Node.js with a proven track record of delivering enterprise-scale solutions. Passionate about clean code, modern architecture patterns, and creating exceptional user experiences.",
   "contact": {
     "email": "loi.tran.dev@gmail.com",
-    "phone": "+84 955 516 805",
-    "website": "aayushbharti.in",
-    "linkedin": "aayushbharti.in/linkedin",
-    "github": "aayushbharti.in/github",
+    "website": "loi.tran.dev",
+    "linkedin": "https://linkedin.com/in/loimtran",
+    "github": "https://github.com/loimtran",
+    "devto": "https://dev.to/loimtran",
     "location": "Ho Chi Minh City, Vietnam"
   },
   "education": [
@@ -87,8 +87,8 @@
   ],
   "skills": {
     "languages": ["TypeScript", "JavaScript", "PHP", "Python", "Go (intermediate)", "SQL"],
-    "frameworks": ["React", "Next.js", "Node.js", "Vue", "Angular", "NestJS", "Laravel", "Django", "React Native"],
-    "databases": ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "Prisma ORM", "Mongoose"],
+    "frameworks": ["React", "Next.js", "Node.js", "Vue", "Angular", "C#", "ASP.NET", "NestJS", "Laravel", "Django", "React Native", "Flutter"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "Prisma ORM", "Mongoose", "MySQL", "SQLite", "Microsoft SQL Server"],
     "tools": ["Git", "Docker", "Kubernetes", "Terraform", "AWS", "Vercel", "Turborepo", "Linear", "Postman"],
     "ui": ["Radix UI", "Shadcn UI", "Framer Motion", "Tailwind CSS"],
     "other": ["GraphQL", "Sanity CMS", "Auth.js", "Zod", "WebSocket", "Kafka", "SSR", "CSR", "SSG", "tRPC"]
