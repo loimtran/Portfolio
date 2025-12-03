@@ -72,25 +72,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "portfolio",
-    title: "Portfolio Website",
-    description: "Modern, responsive portfolio website showcasing projects, skills, and experience with smooth animations and dark mode support.",
-    longDescription: "A professional portfolio website built with Next.js 15 and React 19, featuring a modern design with smooth animations powered by Framer Motion. Includes project showcase with filtering, resume display, contact form, and full dark mode support. Optimized for performance with server-side rendering and responsive design.",
-    image: "/images/4.png",
-    technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "ShadCN UI", "Radix UI", "next-themes", "Lucide Icons"],
-    category: "Frontend",
-    featured: true,
-    liveUrl: "https://loi.tran.dev",
-    githubUrl: "https://github.com/loimtran/portfolio",
-    period: "Jun 2025 – Sep 2025",
-    highlights: [
-      "Built with Next.js 15 and React 19 for optimal performance and modern features",
-      "Implemented smooth page transitions and animations using Framer Motion",
-      "Created responsive design with Tailwind CSS and dark mode support",
-      "Developed reusable UI components with ShadCN and Radix UI for accessibility"
-    ]
-  },
-  {
     id: "zalopay-transaction-engine",
     title: "ZaloPay Transaction Engine",
     description: "High-throughput payment transaction engine processing 150k requests per second with real-time fraud detection.",
@@ -108,6 +89,56 @@ export const projects: Project[] = [
       "Introduced CQRS + event-sourcing achieving 100% audit compliance"
     ]
   },
+  {
+    id: "tiki-page-builder",
+    title: "Tiki Page Builder",
+    description: "Enterprise CMS-driven reusable page builder enabling non-technical teams to manage content across production sites.",
+    longDescription: "A sophisticated content management solution that empowers non-technical teams to build and manage dynamic pages across multiple production sites. Features custom schemas, optimized queries, and advanced rendering strategies.",
+    image: "/images/project-4.jpg",
+    liveUrl: "https://www.tiki.com",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Sanity", "Contentful", "SSR", "SSG"],
+    category: "Frontend",
+    featured: false,
+    period: "Mar 2021 – Present",
+    highlights: [
+      "Architected reusable page builder blocks with dynamic configurability",
+      "Designed custom schemas and optimized GROQ queries for 40% faster delivery",
+      "Implemented SSR/SSG strategies achieving 25% increase in user engagement",
+      "Improved Core Web Vitals by 20% through strategic optimization"
+    ]
+  },
+  {
+    id: "fpt-software",
+    title: "FPT Software",
+    description: "A global software development company providing end-to-end IT solutions and services to businesses worldwide.",
+    longDescription: "A comprehensive software development company providing end-to-end IT solutions and services to businesses worldwide. Features include a responsive design, a user-friendly interface, and a comprehensive set of features for both students and instructors.",
+    image: "/images/8.png",
+    liveUrl: "https://www.fptsoftware.com",
+    technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS", "Apollo GraphQL", "Redux Toolkit", "Docker", "GitHub Actions", "CI/CD"],
+    category: "Full Stack",
+    featured: false,
+    period: "Jul 2015 – May 2018",
+    highlights: [
+      "Built high-performance web applications using Next.js, React, and Tailwind CSS, implementing advanced rendering strategies (SSR, SSG) to achieve a 25% increase in user engagement and 20% improvement in Core Web Vitals",
+      "Integrated TypeScript across full-stack codebases, reducing production defects by 15% and improving overall code quality and maintainability",
+      "Developed secure authentication and authorization system using JWT and Bcrypt"
+    ]
+  },
+  {
+    id: "nashtech-online-learning",
+    title: "NashTech Online Learning",
+    description: "Vietnam's first major online learning platform built with MEAN stack and optimized for performance and SEO.",
+    longDescription: "A comprehensive online learning platform built with the MEAN stack, optimized for performance and SEO. Features include a responsive design, a user-friendly interface, and a comprehensive set of features for both students and instructors.",
+    image: "/images/7.png",
+    liveUrl: "https://www.nashtech.com",
+    technologies: ["MEAN Stack", "AngularJS", "TypeScript", "Node.js", "MySQL", "Java Spring"],
+    category: "Full Stack",
+    featured: false,
+    period: "Jan 2013 – Jul 2015",
+    highlights: [
+      "Built high-performance web applications using MEAN stack and optimized for performance and SEO",
+      "Implemented advanced rendering strategies (SSR, SSG) to achieve a 25% increase in user engagement and 20% improvement in Core Web Vitals",
+      "Integrated TypeScript across full-stack codebases, reducing production defects by 15% and improving overall code quality and maintainability"
+    ]
+  },
 ];
-
-export const categories = ["All", "Full Stack", "Frontend", "Backend"];
