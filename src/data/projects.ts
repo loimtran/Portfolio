@@ -108,42 +108,6 @@ export const projects: Project[] = [
       "Introduced CQRS + event-sourcing achieving 100% audit compliance"
     ]
   },
-  {
-    id: "tiki-page-builder",
-    title: "Tiki Page Builder",
-    description: "Enterprise CMS-driven reusable page builder enabling non-technical teams to manage content across production sites.",
-    longDescription: "A sophisticated content management solution that empowers non-technical teams to build and manage dynamic pages across multiple production sites. Features custom schemas, optimized queries, and advanced rendering strategies.",
-    image: "/images/project-4.jpg",
-    liveUrl: "https://www.tiki.com",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Sanity", "Contentful", "SSR", "SSG"],
-    category: "Frontend",
-    featured: false,
-    period: "Mar 2021 – Present",
-    highlights: [
-      "Architected reusable page builder blocks with dynamic configurability",
-      "Designed custom schemas and optimized GROQ queries for 40% faster delivery",
-      "Implemented SSR/SSG strategies achieving 25% increase in user engagement",
-      "Improved Core Web Vitals by 20% through strategic optimization"
-    ]
-  },
-  {
-    id: "enterprise-banking-modules",
-    title: "Enterprise Banking Modules",
-    description: "Secure banking solutions for HSBC & Standard Chartered with optimized performance and robust security.",
-    longDescription: "Critical banking infrastructure components built for major international banks. Features include secure authentication, optimized database queries, and comprehensive audit trails.",
-    image: "/images/project-5.jpg",
-    liveUrl: "https://www.10xbanking.com",
-    technologies: ["Java Spring", "AngularJS", "MySQL", "MEAN Stack"],
-    category: "Full Stack",
-    featured: false,
-    period: "Jan 2013 – Jun 2015",
-    highlights: [
-      "Built secure banking modules for HSBC & Standard Chartered",
-      "Optimized SQL queries reducing page load time by 67%",
-      "Shipped 18 production applications using MEAN stack",
-      "Developed Vietnam's first major online learning platform"
-    ]
-  }
 ];
 
 export const categories = ["All", "Full Stack", "Frontend", "Backend"];
