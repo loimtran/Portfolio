@@ -33,18 +33,30 @@ const values = [
 ];
 
 const techStack = [
+  { name: "TypeScript", category: "Language" },
+  { name: "JavaScript", category: "Language" },
+  { name: "Python", category: "Language" },
   { name: "React", category: "Frontend" },
   { name: "Next.js", category: "Frontend" },
-  { name: "TypeScript", category: "Language" },
   { name: "Node.js", category: "Backend" },
+  { name: "NestJS", category: "Backend" },
+  { name: "Vue", category: "Frontend" },
   { name: "PostgreSQL", category: "Database" },
   { name: "MongoDB", category: "Database" },
+  { name: "Redis", category: "Database" },
+  { name: "Prisma ORM", category: "Database" },
   { name: "Tailwind CSS", category: "Styling" },
   { name: "Framer Motion", category: "Animation" },
+  { name: "Radix UI", category: "UI" },
+  { name: "Shadcn UI", category: "UI" },
   { name: "GraphQL", category: "API" },
+  { name: "tRPC", category: "API" },
+  { name: "Sanity CMS", category: "CMS" },
   { name: "Docker", category: "DevOps" },
+  { name: "Kubernetes", category: "DevOps" },
   { name: "AWS", category: "Cloud" },
   { name: "Vercel", category: "Platform" },
+  { name: "WebSocket", category: "Real-time" },
 ];
 
 export default function AboutPage() {
@@ -95,7 +107,8 @@ export default function AboutPage() {
                       fill
                       className="object-cover"
                       priority
-                      sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+                      quality={100}
+                      sizes="(max-width: 768px) 512px, (max-width: 1024px) 640px, 768px"
                     />
                     {/* Subtle inner shadow for depth */}
                     <div className="absolute inset-0 rounded-full ring-4 ring-black/10" />
