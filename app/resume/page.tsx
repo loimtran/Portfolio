@@ -82,8 +82,8 @@ export default function ResumePage() {
                             <p className="text-sm md:text-base text-primary font-medium">{exp.company}</p>
                           </div>
                           <div className="text-xs md:text-sm text-muted-foreground flex-shrink-0">
-                            <div>{exp.period}</div>
-                            <div>{exp.location} • {exp.type}</div>
+                            <div className="flex justify-end">{exp.period}</div>
+                            <div className="flex justify-end">{exp.location} • {exp.type}</div>
                           </div>
                         </div>
                         <ul className="space-y-2">
@@ -123,8 +123,8 @@ export default function ResumePage() {
                         <p className="text-sm md:text-base text-primary">{edu.institution}</p>
                       </div>
                       <div className="text-xs md:text-sm text-muted-foreground flex-shrink-0">
-                        <div>{edu.period}</div>
-                        <div>{edu.location}</div>
+                        <div className="flex justify-end">{edu.period}</div>
+                        <div className="flex justify-end">{edu.location}</div>
                       </div>
                     </div>
                     {edu.highlights.length > 0 && (
