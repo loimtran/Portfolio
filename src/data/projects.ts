@@ -14,25 +14,25 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    id: "zenith-academy",
-    title: "Zenith Academy",
-    description: "Interactive Learning & Teaching Platform empowering students and instructors with seamless course management and monetization.",
-    longDescription: "A comprehensive learning platform that enables students to enroll, consume, and rate courses while providing instructors with tools to create, manage, and monetize educational content. Features secure authentication, role-based authorization, payment integration, and responsive design.",
-    image: "/images/1.png",
-    technologies: ["TypeScript", "Next.js", "Turborepo", "Express.js", "MongoDB", "Tailwind CSS", "Zustand", "ShadCN", "JWT", "Razorpay", "Cloudinary"],
-    category: "Full Stack",
-    featured: true,
-    liveUrl: "https://academy.aayushbharti.in",
-    githubUrl: "https://github.com/loimtran/Zenith-Academy",
-    period: "Oct 2024 – Feb 2025",
-    highlights: [
-      "Engineered secure authentication and role-based authorization using JWT and Bcrypt",
-      "Integrated Razorpay payment gateway for seamless course purchases",
-      "Designed responsive, minimalistic UI with Framer Motion animations",
-      "Built RESTful APIs for course management, media uploads, and progress tracking"
-    ]
-  },
+  // {
+  //   id: "zenith-academy",
+  //   title: "Zenith Academy",
+  //   description: "Interactive Learning & Teaching Platform empowering students and instructors with seamless course management and monetization.",
+  //   longDescription: "A comprehensive learning platform that enables students to enroll, consume, and rate courses while providing instructors with tools to create, manage, and monetize educational content. Features secure authentication, role-based authorization, payment integration, and responsive design.",
+  //   image: "/images/1.png",
+  //   technologies: ["TypeScript", "Next.js", "Turborepo", "Express.js", "MongoDB", "Tailwind CSS", "Zustand", "ShadCN", "JWT", "Razorpay", "Cloudinary"],
+  //   category: "Full Stack",
+  //   featured: true,
+  //   liveUrl: "https://academy.aayushbharti.in",
+  //   githubUrl: "https://github.com/loimtran/Zenith-Academy",
+  //   period: "Oct 2024 – Feb 2025",
+  //   highlights: [
+  //     "Engineered secure authentication and role-based authorization using JWT and Bcrypt",
+  //     "Integrated Razorpay payment gateway for seamless course purchases",
+  //     "Designed responsive, minimalistic UI with Framer Motion animations",
+  //     "Built RESTful APIs for course management, media uploads, and progress tracking"
+  //   ]
+  // },
   {
     id: "next-venture",
     title: "Next Venture",
