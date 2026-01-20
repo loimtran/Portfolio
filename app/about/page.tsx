@@ -1,13 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { MapPin, Calendar, Heart, Zap, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/layout/PageTransition";
 import Link from "next/link";
-import resumeData from "@/data/resume.json";
 
 const values = [
   {
@@ -66,114 +64,43 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <div className="hero-glow top-0 left-1/4 -translate-x-1/2" />
           <div className="accent-glow top-1/2 right-0" />
-          <div className="absolute top-20 left-[10%] w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-[10%] w-[32rem] h-[32rem] bg-purple-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+          <div className="absolute top-20 left-[10%] w-80 h-80 bg-blue-500/15 rounded-full blur-3xl motion-safe:animate-[pulse_6s_ease-in-out_infinite]" />
+          <div
+            className="absolute bottom-20 right-[10%] w-[28rem] h-[28rem] bg-purple-500/15 rounded-full blur-3xl motion-safe:animate-[pulse_7s_ease-in-out_infinite]"
+            style={{ animationDelay: "1.5s" }}
+          />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 md:mb-32">
-            <FadeIn direction="left">
-              <div className="relative flex items-center justify-center">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
-                  {/* Animated gradient glow background */}
-                  <motion.div
-                    animate={{
-                      scale: [1, 1.1, 1],
-                      opacity: [0.3, 0.5, 0.3],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 blur-2xl"
-                  />
-                  
-                  {/* Outer ring with gradient border */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1">
-                    <div className="w-full h-full rounded-full bg-background" />
-                  </div>
-                  
-                  {/* Image container */}
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="relative w-full h-full rounded-full overflow-hidden border-4 border-background shadow-2xl"
-                  >
-                    <Image
-                      src="/images/self.jpeg"
-                      alt={resumeData.name}
-                      fill
-                      className="object-cover"
-                      priority
-                      quality={100}
-                      sizes="(max-width: 768px) 512px, (max-width: 1024px) 640px, 768px"
-                    />
-                    {/* Subtle inner shadow for depth */}
-                    <div className="absolute inset-0 rounded-full ring-4 ring-black/10" />
-                  </motion.div>
-                  
-                  {/* Decorative elements */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5, type: "spring" }}
-                    className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-400 border-2 border-background shadow-lg"
-                  />
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.7, type: "spring" }}
-                    className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-background shadow-lg"
-                  />
-                </div>
-                
-                {/* Status badge */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.3 }}
-                  className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 glass-card rounded-2xl p-3 md:p-4 shadow-xl border border-border/50 backdrop-blur-md"
-                >
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <motion.div
-                      animate={{ scale: [1, 1.2, 1] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                      className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-green-500 shadow-lg shadow-green-500/50"
-                    />
-                    <span className="text-xs md:text-sm font-medium">Available for work</span>
-                  </div>
-                </motion.div>
-              </div>
-            </FadeIn>
-
-            <FadeIn direction="right">
-              <Badge variant="gradient" className="mb-6 px-4 py-1.5">About Me</Badge>
+          <div className="max-w-3xl mx-auto text-center mb-20 md:mb-32">
+            <FadeIn>
+              <Badge variant="gradient" className="mb-6 px-4 py-1.5">
+                About Me
+              </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-tight">
                 Passionate about crafting{" "}
                 <span className="gradient-text">exceptional</span> digital experiences
               </h1>
               <div className="space-y-4 md:space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  With over 10 years of experience in software development, I&apos;ve had the
-                  privilege of working with companies ranging from innovative startups to
-                  enterprise-level corporations across Vietnam and internationally.
+                  With over 10 years of experience in software development, I&apos;ve had the privilege of
+                  working with companies ranging from innovative startups to enterprise-level corporations
+                  across Vietnam and internationally.
                 </p>
                 <p>
-                  My journey began at FPT University, where I graduated in the top 3% of my
-                  cohort. Since then, I&apos;ve built high-throughput transaction engines
-                  processing 150k RPS, architected CMS-driven page builders serving millions
-                  of users, and developed ML-powered fraud detection systems saving millions
-                  annually.
+                  My journey began at FPT University, where I graduated in the top 3% of my cohort. Since then,
+                  I&apos;ve built high-throughput transaction engines processing 150k RPS, architected CMS-driven
+                  page builders serving millions of users, and developed ML-powered fraud detection systems
+                  saving millions annually.
                 </p>
                 <p>
-                  Today, I specialize in full-stack development with a focus on Next.js, React,
-                  TypeScript, and Node.js. I&apos;m passionate about clean architecture, performance
-                  optimization, and creating intuitive user experiences.
+                  Today, I specialize in full-stack development with a focus on Next.js, React, TypeScript, and
+                  Node.js. I&apos;m passionate about clean architecture, performance optimization, and creating
+                  intuitive user experiences.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4 md:gap-6 mt-8">
+              <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-8">
                 <div className="flex items-center gap-2 text-sm md:text-base text-muted-foreground">
                   <MapPin className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
                   Ho Chi Minh City, Vietnam
@@ -183,7 +110,7 @@ export default function AboutPage() {
                   10+ Years Experience
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                 <Button asChild variant="gradient" size="lg" className="text-base px-8 h-14">
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
